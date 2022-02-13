@@ -8,13 +8,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.io.IOException;
 
-@SpringBootApplication
+//@SpringBootApplication
 public class Nio02Application {
 
     public static OkHttpClient client = new OkHttpClient();
 
     public static void main(String[] args) throws IOException {
-        SpringApplication.run(Nio02Application.class, args);
+//        SpringApplication.run(Nio02Application.class, args);
 
         Request request = new Request.Builder().url("http://localhost:8088/api/hello").build();
 
